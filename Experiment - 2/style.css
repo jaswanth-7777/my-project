@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: rgb(17, 108, 245);
+    border: 25px inset rgb(239, 186, 12);
+}
+
+.banking-container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 25px  rgb(239, 12, 194);
+}
+
+.balance-display {
+    font-size: 3em;
+    font-weight: bold;
+    color: #28a745;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 15px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.deposit-button {
+    background-color: #28a745;
+    color: #ffffff;
+}
+
+.deposit-button:hover {
+    background-color: #151615;
+}
+
+.withdraw-button {
+    background-color: #dc3545;
+    color: #ffffff;
+}
+
+.withdraw-button:hover {
+    background-color: rgb(8, 1, 1);
+}
