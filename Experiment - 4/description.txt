@@ -1,0 +1,29 @@
+LIVE CHARACTER COUNTER WITH HTML, CSS, AND JAVASCRIPT
+
+DESCRIPTION:
+In this experiment, I created a simple web page that shows a live character counter. The page has a textarea where the user can type, and just below it a counter displays the number of characters typed in real-time. The layout is styled with basic CSS to keep it clean and readable. The counting part is handled using JavaScript, which updates the value as the user types or deletes text.
+
+TEST CASES AND FUNCTIONAL REQUIREMENTS:
+1. Textarea Input:
+A textarea is provided for entering text. It is styled with padding and width adjustment to make typing more comfortable.
+
+2. Character Counter:
+A counter is shown below the textarea. It starts from 0 and increases or decreases depending on how many characters the user types.
+
+3. Real-Time Updating:
+JavaScript is used to listen to the input event. Whenever the user types, the counter updates instantly. For example:
+
+Typing "Hello" shows Characters: 5.
+
+Deleting 2 letters updates it back to Characters: 3.
+
+4. Container Styling:
+The whole feature is placed inside a bordered container (500px wide) to make the layout neat and structured.
+
+LEARNING OUTCOMES:
+From this experiment, I learned:
+1 How to design a simple user interface with HTML elements like textarea and div.
+2.How to style the layout using CSS for better readability.
+3.How to use JavaScript event listeners to capture user input and update values dynamically.
+4.How to implement real-time interactivity on a webpage.
+5.How to combine HTML, CSS, and JavaScript together in a small working project.
