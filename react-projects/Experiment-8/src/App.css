@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;      /* vertical center */
+  justify-content: center;  /* horizontal center */
+}
+
+.library-card {
+  max-width: 800px;       /* prevents stretching */
+  width: 70%;
+}
+
+.library-header {
+  margin-bottom: 16px;
+  text-align: left;       /* aligned left */
+}
+
+.library-search {
+  margin-bottom: 16px;
+}
+
+.search-input {
+  width: 40%;             /* fixed width */
+  padding: 8px 12px;
+  display: inline-block;  /* inline instead of block */
+}
+
+.library-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: flex-start;  /* aligned left */
+}
+
+.form-input {
+  width: auto;            /* doesn’t stretch */
+  padding: 8px 10px;
+}
+
+.library-list {
+  margin-top: 8px;
+}
+
+.book-entry {              /* renamed class */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border: 1px solid #e4ebf3;
+}
