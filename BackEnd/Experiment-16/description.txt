@@ -1,0 +1,28 @@
+Experiment: Middleware Implementation for Logging and Bearer Token Authentication
+
+In this experiment, I created an Express.js application that demonstrates how middleware functions work in Node.js for request logging 
+and authentication. The goal was to understand how middleware processes requests before reaching the final route handlers and 
+how to protect routes using a Bearer token.
+
+In the JavaScript,
+I used Node.js and Express to build the backend server. Two custom middleware functions were implemented:
+
+Logging Middleware: Logs the HTTP method, URL, and timestamp for every incoming request. This helps monitor server activity and debug requests.
+Authentication Middleware: Checks the Authorization header for a Bearer token. Only requests with the correct token (mysecrettoken) 
+are allowed to access the protected route. All other requests return an appropriate 401 Unauthorized message.
+
+I created two main routes:
+GET /public – A public route accessible without authentication.
+GET /protected – A protected route that can only be accessed with the correct Bearer token.
+
+How it works:
+The server starts on port 3000 using Express.
+When a user makes any request, the logging middleware first records the method, URL, and timestamp.
+If the request is for /protected, the authentication middleware checks for the correct Bearer token (mysecrettoken).
+If the token is valid, access is granted; otherwise, a 401 Unauthorized response is sent.
+The /public route remains open to everyone without requiring authentication.
+
+Overall,
+This experiment helped me understand how middleware functions control request flow in an Express.js application. 
+I learned how to implement global and route-specific middleware, validate HTTP headers, and secure endpoints using token-based authentication. 
+It also improved my understanding of how logging can be used to track request activity and ensure secure access to server routes.
