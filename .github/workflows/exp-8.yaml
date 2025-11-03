@@ -11,6 +11,8 @@ on:
       - main
     paths:
       - 'react-projects/Experiment-8/**'
+  # Allow manual runs from the GitHub Actions UI
+  workflow_dispatch:
 
 jobs:
   build:
