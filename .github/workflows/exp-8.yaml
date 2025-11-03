@@ -66,6 +66,13 @@ jobs:
         env:
           DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
         run: |
-          docker tag react-experiment-3-1 "${DOCKERHUB_USERNAME}/react-experiment-3-1:latest"
-          docker push "${DOCKERHUB_USERNAME}/react-experiment-3-1:latest"
+          set -euo pipefail
+          # sanitize username: remove CR and LF that could split the script
+          USER=$(printf '%s' "$DOCKERHUB_USERNAME" | tr -d '\r\n')
+          if [ -z "$USER" ]; then
+            echo "DOCKERHUB_USERNAME is empty after sanitization" >&2
+            exit 1
+          fi
+          docker tag react-experiment-3-1 "${USER}/react-experiment-3-1:latest"
+          docker push "${USER}/react-experiment-3-1:latest"
 
