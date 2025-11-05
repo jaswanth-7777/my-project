@@ -1,0 +1,42 @@
+/* src/styles.css */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, system-ui, Arial, sans-serif; background: #f4f6f8; color:#111827; }
+.container { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+.card { background:white; border-radius:16px; padding:20px; box-shadow: 0 6px 18px rgba(0,0,0,.06); }
+
+h1 { font-size: 28px; margin: 0 0 8px; }
+h2 { font-size: 22px; margin: 0 0 8px; }
+h3 { font-size: 16px; margin-top: 12px; }
+
+label { display:block; margin:12px 0 6px; font-weight:600; }
+select { padding:8px 10px; border-radius:10px; border:1px solid #e5e7eb; }
+
+button { padding:8px 12px; border-radius:10px; border:1px solid #e5e7eb; background:#e5e7eb; cursor:pointer; font-weight:600; }
+button.primary { background:#111827; color:white; border-color:#111827; }
+button.danger { background:#ef4444; color:white; border-color:#ef4444; }
+.btnrow { display:flex; gap:8px; }
+
+.qbox { margin-top:10px; }
+.qmeta { display:flex; gap:8px; align-items:center; margin-bottom:8px; }
+.badge { font-size:12px; padding:4px 8px; border-radius:999px; background:#e5e7eb; }
+.badge.easy { background:#d1fae5; }
+.badge.medium { background:#fde68a; }
+.badge.hard { background:#fecaca; }
+.qid { opacity:.6; font-size:12px; }
+
+.stem { font-weight:600; margin-bottom:8px; }
+
+.options { display:grid; gap:8px; margin: 10px 0; }
+.opt { display:flex; gap:8px; align-items:center; padding:8px; border:1px solid #e5e7eb; border-radius:12px; cursor:pointer; }
+.opt.selected { outline:2px solid #111827; }
+
+.feedback { margin-top:8px; padding:8px; border-radius:10px; background:#f3f4f6; }
+
+.table { width:100%; border-collapse: collapse; margin-top:8px; }
+.table th, .table td { text-align:left; border-bottom:1px solid #eee; padding:8px; font-size:14px; }
+
+.chiprow { display:flex; gap:8px; margin: 4px 0 8px; }
+.chip { padding:4px 10px; border-radius:999px; background:#e5e7eb; font-size:12px; }
+.chip.easy { background:#d1fae5; }
+.chip.medium { background:#fde68a; }
+.chip.hard { background:#fecaca; }
